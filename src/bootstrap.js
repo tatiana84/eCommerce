@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter } from "react-router-dom";
-
 import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -17,8 +16,6 @@ function main() {
       <BrowserRouter>
         <Layout>
           <div>
-            <p>Hey there!</p>
-            <h2>Hey there again!</h2>
           </div>
         </Layout>
       </BrowserRouter>
